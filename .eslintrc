@@ -3,10 +3,7 @@
     "browser": true,
     "jest/globals": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -15,11 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "jest"
-  ],
+  "plugins": ["react", "@typescript-eslint", "jest"],
   "rules": {
     "react/prop-types": "off",
     "react/button-has-type": "off",
@@ -28,24 +21,18 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
+    "@typescript-eslint/no-use-before-define": ["error"],
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    "jest/valid-expect": "error",
+    "comma-dangle": "off"
   }
 }

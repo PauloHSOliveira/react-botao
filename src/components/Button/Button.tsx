@@ -20,12 +20,10 @@ const Button: FC<IProps> = ({
   iconEnd,
   ...rest
 }) => (
-  <ButtonContainer
-    background={background}
-    color={color}
-    {...rest}
-  >
-    {loading ? 'carregando...' : (
+  <ButtonContainer background={background} color={color} {...rest}>
+    {loading ? (
+      'carregando...'
+    ) : (
       <>
         {iconStart && iconStart}
         {children}

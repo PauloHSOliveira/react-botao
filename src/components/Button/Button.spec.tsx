@@ -16,7 +16,7 @@ describe('<Button>', () => {
         iconEnd={<span>test-icon-end</span>}
       >
         test-btn
-      </Button>,
+      </Button>
     );
 
     screen.getByText('test-icon-start');

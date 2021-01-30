@@ -13,7 +13,6 @@ function App() {
       >
         Botão teste
       </Button>
-
     </>
   );
 }

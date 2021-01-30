@@ -12,23 +12,22 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
   border: 0;
   padding: 12px 32px;
   border-radius: 4px;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 
   display: flex;
   justify-content: space-around;
   gap: 8px;
 
-  background:   ${(props) => props.background};
+  background: ${(props) => props.background};
   color: ${(props) => props.color};
 
   &:hover {
-  opacity: .8;
+    opacity: 0.8;
   }
 
   &:disabled {
-    opacity: .4;
+    opacity: 0.4;
     cursor: default;
   }
-
 `;
