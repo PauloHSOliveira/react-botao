@@ -1,8 +1,8 @@
 import React, { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 
-import { ButtonContainer } from './styles';
+import { ButtonContainer } from './StyledComponents';
 
-interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   background?: string;
   color?: string;
@@ -19,18 +19,20 @@ const Button: FC<IProps> = ({
   iconStart,
   iconEnd,
   ...rest
-}) => (
-  <ButtonContainer background={background} color={color} {...rest}>
-    {loading ? (
-      'carregando...'
-    ) : (
-      <>
-        {iconStart && iconStart}
-        {children}
-        {iconEnd && iconEnd}
-      </>
-    )}
-  </ButtonContainer>
-);
+}) => {
+  return (
+    <ButtonContainer background={background} color={color} {...rest}>
+      {loading ? (
+        'carregando...'
+      ) : (
+        <>
+          {iconStart && iconStart}
+          {children}
+          {iconEnd && iconEnd}
+        </>
+      )}
+    </ButtonContainer>
+  );
+};
 
 export default Button;
